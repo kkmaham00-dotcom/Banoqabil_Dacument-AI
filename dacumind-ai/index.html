@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dacumind AI - Intelligent Document Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="container">
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand">Dacumind<span style="color: var(--accent-color);">.ai</span></a>
+      <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+        &#9776;
+      </button>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it Works</a></li>
+        <li><a href="#use-cases">Use Cases</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline">Login</a>
+        <a href="dashboard.html" class="btn btn-primary">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero container">
+    <h1>Chat with Your Documents <br>Using the Power of AI</h1>
+    <p>Upload PDFs, Word docs, and text files. Ask questions, extract summaries, and find exactly what you need in seconds without reading hundreds of pages.</p>
+    <div class="hero-ctas">
+      <a href="dashboard.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 30px;">Start Chatting Now — It's Free</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section container">
+    <h2 class="text-center">Why Choose Dacumind AI?</h2>
+    <p class="text-center text-muted" style="max-width: 600px; margin: 0 auto;">Everything you need to digest complex information quickly.</p>
+    
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Instant Answers</h3>
+        <p class="text-muted">No more ctrl+F. Ask questions in natural language and get precise answers based directly on your document's content.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Multi-Document Analysis</h3>
+        <p class="text-muted">Upload multiple files at once and cross-reference information seamlessly within a single chat session.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Secure & Private</h3>
+        <p class="text-muted">Your documents are encrypted and never used to train public AI models. Enterprise-grade security out of the box.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="section container" style="background-color: var(--bg-secondary); border-radius: var(--radius-lg);">
+    <h2 class="text-center">How It Works</h2>
+    <div class="features-grid" style="text-align: center;">
+      <div>
+        <h3 style="color: var(--accent-color); font-size: 2rem;">1</h3>
+        <h4>Upload</h4>
+        <p class="text-muted">Drag and drop your files into our secure vault.</p>
+      </div>
+      <div>
+        <h3 style="color: var(--accent-color); font-size: 2rem;">2</h3>
+        <h4>Process</h4>
+        <p class="text-muted">Our AI instantly analyzes and indexes your content.</p>
+      </div>
+      <div>
+        <h3 style="color: var(--accent-color); font-size: 2rem;">3</h3>
+        <h4>Chat</h4>
+        <p class="text-muted">Start asking questions and get instant insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section (Interactive Tabs) -->
+  <section id="use-cases" class="section container">
+    <h2 class="text-center">Built for Every Industry</h2>
+    
+    <div class="tabs">
+      <button class="tab-btn active" data-target="legal">Legal</button>
+      <button class="tab-btn" data-target="education">Education</button>
+      <button class="tab-btn" data-target="research">Research</button>
+    </div>
+
+    <div id="legal" class="tab-content active">
+      <h3>Legal & Compliance</h3>
+      <p class="text-muted">Quickly analyze contracts, find specific clauses, and summarize lengthy litigation documents in seconds.</p>
+    </div>
+    
+    <div id="education" class="tab-content">
+      <h3>Education & Students</h3>
+      <p class="text-muted">Upload textbooks and lecture notes. Create study guides and flashcards automatically by chatting with your course materials.</p>
+    </div>
+
+    <div id="research" class="tab-content">
+      <h3>Academic Research</h3>
+      <p class="text-muted">Digest complex research papers, extract methodologies, and compare findings across multiple PDFs effortlessly.</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="section container text-center">
+    <h2>Ready to transform how you read?</h2>
+    <p class="text-muted" style="margin-bottom: 20px;">Join thousands of professionals saving hours every week.</p>
+    <a href="dashboard.html" class="btn btn-primary">Create Your Free Account</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <p>&copy; 2026 Dacumind AI. All rights reserved.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Dacumind AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dashboard-body">
+
+  <div class="dashboard-layout">
+    <!-- Sidebar Overlay -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header" style="display: flex; justify-content: space-between; align-items: center;">
+        <a href="index.html" class="navbar-brand" style="font-size: 1.2rem;">Dacumind<span style="color: var(--accent-color);">.ai</span></a>
+        <button id="sidebar-close" style="background: none; border: none; color: var(--text-primary); font-size: 1.5rem; cursor: pointer; display: none;">&times;</button>
+      </div>
+      
+      <div class="sidebar-content">
+        <h3>My Documents</h3>
+        <!-- Drag and Drop Zone -->
+        <div id="drop-zone" class="drop-zone">
+          <p>Drag & Drop files here</p>
+          <p class="text-muted" style="font-size: 0.8rem;">or click to upload</p>
+          <input type="file" id="file-input" hidden multiple>
+        </div>
+        
+        <ul id="document-list" class="document-list">
+          <!-- Uploaded files will appear here -->
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Chat Area -->
+    <main class="chat-area">
+      <div class="chat-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <button id="sidebar-toggle" class="btn btn-outline" style="padding: 5px 10px; font-size: 1.2rem; border: none; display: none;">&#9776;</button>
+          <h2>Chat Session</h2>
+        </div>
+        <button class="btn btn-outline" style="padding: 5px 10px; font-size: 0.9rem;">Clear Chat</button>
+      </div>
+
+      <div id="chat-container" class="chat-container">
+        <!-- Chat messages will be appended here -->
+        <div class="message ai-message">
+          <div class="message-content">
+            Hello! I am ready to help you analyze your documents. Please upload a file to the left to get started.
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-input-area">
+        <form id="chat-form" class="chat-form">
+          <input type="text" id="chat-input" placeholder="Ask a question about your documents..." autocomplete="off">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
